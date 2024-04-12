@@ -24,15 +24,7 @@ const App = () => {
           </div>
           <div>
             <h1 className="text-xl px-16">
-              Web development, an ever-evolving field, plays a central role in
-              the digital transformation of our world. It encompasses two core
-              aspects—front-end development and back-end development—each
-              contributing to the dynamic and interconnected online environment
-              we engage with every day. Developers harness a range of
-              technologies and tools to create websites and applications that
-              are not only visually appealing but also highly functional. This
-              essay delves into the essence of web development and its
-              significance in our interconnected age.
+              Web development
             </h1>
           </div>
         </div>
