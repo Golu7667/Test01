@@ -12,8 +12,8 @@ on:
 # This is the workflow that is being run.
 jobs:
   build-and-deploy:
-    # This is telling GitHub to run the workflow on the latest version of Ubuntu.
-    runs-on: ubuntu-latest
+   
+    runs-on: self-hosted
     steps:
       # Checkout the code from the GitHub repository
       - name: Checkout code
