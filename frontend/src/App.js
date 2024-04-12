@@ -58,18 +58,11 @@ const App = () => {
         <div className="w-1/2 h-110 shadow-xl shadow-blue-500 rounded-xl">
           <div className="w-full h-8 bg-sky-500"></div>
           <div className="w-full h-16 flex justify-center items-center">
-<<<<<<< HEAD
-            <img
-              src="https://raw.githubusercontent.com/Golu7667/Text-To-Speech-App/2148bd53d6f090bd0aa0d42e8285c2410e15c42a/my-app/public/speak.svg"
-              className="w-16 h-16"
-            />
-=======
             <img src="https://raw.githubusercontent.com/Golu7667/Text-To-Speech-App/2148bd53d6f090bd0aa0d42e8285c2410e15c42a/my-app/public/speak.svg" className="w-16 h-16" alt="RobotImage"/>
->>>>>>> 3039e46b159f18163ebcbba50e2fa9a3353c2d9c
           </div>
           <div>
             <h1 className="text-xl px-16">
-              Web development
+              Web development.
             </h1>
           </div>
         </div>
