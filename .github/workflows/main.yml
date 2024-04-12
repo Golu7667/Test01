@@ -1,0 +1,39 @@
+# The name of the workflow.
+name: Build and Deploy
+
+# Run the workflow when code is pushed to the main branch
+on:
+  push:
+    branches:
+      - main
+
+
+
+# This is the workflow that is being run.
+jobs:
+  build-and-deploy:
+   
+    runs-on: self-hosted
+    steps:
+      # Checkout the code from the GitHub repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Install dependencies and run tests for the client application
+      - name: Install and Test Frontend
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
+          
+
+      # Install dependencies, export environment variables to be used by application and run tests for the server application
+      - name: Install and Test Backend
+        working-directory: ./backend
+        run: |
+          npm install
+          npm start
+          
+          
+
+ 
