@@ -20,7 +20,11 @@ jobs:
         uses: actions/checkout@v2
 
       # Install dependencies and run tests for the client application
-      
+       - name: Install and Test Frontend
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm start
           
 
       # Install dependencies, export environment variables to be used by application and run tests for the server application
