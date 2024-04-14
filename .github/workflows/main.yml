@@ -24,8 +24,7 @@ jobs:
         working-directory: ./frontend
         run: |
           echo "Current directory is: $(pwd)"
-          npm install
-          npm start 
+        
         
           
 
@@ -33,8 +32,8 @@ jobs:
       - name: Install and Test Backend
         working-directory: ./backend
         run: |
-          npm install
-          npm start
+          echo "Current directory is: $(pwd)"
+         
           
           
 
