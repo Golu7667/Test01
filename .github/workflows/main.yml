@@ -24,8 +24,9 @@ jobs:
         working-directory: ./frontend
         run: |
           echo "Current directory is: $(pwd)"
+          npm install react-scripts
           npm start
-        
+          
           
 
       # Install dependencies, export environment variables to be used by application and run tests for the server application
