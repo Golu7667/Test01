@@ -23,8 +23,9 @@ jobs:
       - name: Install and Test Frontend
         working-directory: ./frontend
         run: |
-          echo "Installing dependencies in backend directory"
-          
+         
+          npm install
+          npm start 
         
           
 
