@@ -23,9 +23,7 @@ jobs:
       - name: Install and Test Frontend
         working-directory: ./frontend
         run: |
-          echo "Current directory is: $(pwd)"
-          npm install react-scripts
-          npm start
+          npm run build
           
           
 
