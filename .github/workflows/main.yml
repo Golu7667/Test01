@@ -23,7 +23,7 @@ jobs:
       - name: Install and Test Frontend
         working-directory: ./frontend
         run: |
-         
+          npm install
 
       # Install dependencies, export environment variables to be used by application and run tests for the server application
       - name: Install and Test Backend
