@@ -23,6 +23,7 @@ jobs:
       - name: Install and Test Frontend
         working-directory: ./frontend
         run: |
+          npm install
           npm run build
           
 
