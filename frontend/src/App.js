@@ -2,52 +2,11 @@ import React, { useRef } from "react";
 
 const App = () => {
   // Create a ref for the SpeechSynthesisUtterance instance
-  const utteranceRef = useRef(null);
-  const speakPredefinedText = (text) => {
-    const synthReady = () => {
-        if ('speechSynthesis' in window) {
-            const synth = window.speechSynthesis;
-            
-            // Check if voices are available
-            if (synth.getVoices().length === 0) {
-                console.warn('No voices available for speech synthesis.');
-                return;
-            }
-
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.voice = synth.getVoices()[0]; // Set the first available voice
-
-            // Continue with speech synthesis
-            synth.speak(utterance);
-        } else {
-            alert("Text-to-speech is not supported in your browser.");
-        }
-    };
-
-    if (window.speechSynthesis) {
-        // If window.speechSynthesis is already available, execute the code immediately
-        synthReady();
-    } else {
-        // If window.speechSynthesis is not yet available, wait for it to be ready
-        window.addEventListener('speechSynthesisReady', synthReady);
-    }
-};
+ 
 
 
   
 
-  const handleSpeakClick = () => {
-    // Check if there's an existing utterance and cancel it
-    console.log("hi")
-    if (utteranceRef.current && utteranceRef.current.paused) {
-      window.speechSynthesis.cancel();
-    }
-
-    // Speak the predefined text
-    speakPredefinedText(
-      "Web development, an ever-evolving field, plays a central role in the digital transformation of our world. It encompasses two core aspects—front-end development and back-end development—each contributing to the dynamic and interconnected online environment we engage with every day. Developers harness a range of technologies and tools to create websites and applications that are not only visually appealing but also highly functional. This essay delves into the essence of web development and its significance in our interconnected age."
-    );
-  };
 
   return (
     <>
