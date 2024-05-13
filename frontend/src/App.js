@@ -68,12 +68,7 @@ const App = () => {
         </div>
       </div>
       <div className="w-100vw h-16 flex justify-center items-center">
-        <button
-          className="w-48 h-12 bg-sky-500 hover:bg-sky-700 rounded-md text-white"
-          onClick={()=>handleSpeakClick()}
-        >
-          Speak
-        </button>
+      
       </div>
     </>
   );
