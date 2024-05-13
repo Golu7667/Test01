@@ -21,7 +21,7 @@ const App = () => {
           </div>
           <div>
             <h1 className="text-xl px-16">
-              Web development...
+              Web development
             </h1>
           </div>
         </div>
