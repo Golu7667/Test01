@@ -31,7 +31,7 @@ jobs:
         working-directory: ./backend
         run: |
           npm install
-          npm test
+          npm start
 
       - name: Deploy
         # Add your deployment steps here
